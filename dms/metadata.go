@@ -14,10 +14,14 @@ const (
 
 type Metadata struct {
 	Value        interface{}
-	PropertyType PropertyType
+	PropertyType PropertyInfo
 }
 
-type PropertyType struct {
-	Name string
-	Type MetadataType
+type PropertyInfo struct {
+	Name         string
+	propertyType MetadataType
+}
+
+func (m Metadata) Type() MetadataType {
+	return m.PropertyType.propertyType
 }
