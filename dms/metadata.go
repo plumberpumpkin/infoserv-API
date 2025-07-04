@@ -2,6 +2,7 @@ package dms
 
 type MetadataType int
 
+// Extend if necessary
 const (
 	String MetadataType = iota
 	Integer
