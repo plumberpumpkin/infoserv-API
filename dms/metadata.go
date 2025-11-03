@@ -10,6 +10,7 @@ const (
 	Float
 	Blob
 	Boolean
+	Date
 )
 
 type Metadata struct {
